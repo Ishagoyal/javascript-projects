@@ -1,0 +1,65 @@
+<html>
+	<head>
+	<title>Contact Form</title>
+	<link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+	<style>{
+		background-color:black;
+	}
+	</style>
+	</head>
+	<body>
+		<div class="container">
+		   <div class="row">
+			<div class="col-md-12">
+			    <form class="horizontal" method="post" action="hello.html" name="ContactForm" onsubmit="return validateForm();">
+				<fieldset>
+				    <legend class="header "> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspPlease fill this from to get in touch with me</legend>
+				      <div class="form-group">
+					<div class="col-md-8">
+					Select Your City:
+					<select required class="form-control" name="city" id="userCityOptions" class="required" onchange="userStateAndCountry();">
+					<option value="">Choose your city</option>
+					<option value="1">Jaipur</option>
+					<option value="2">Mumabi</option>
+					<option value="2">Bangalore</option>
+					<option value="3">Pune</option>
+					</select>
+					</div>
+				      </div>
+
+				      <div class="form-group">
+					<div class="col-md-8">
+					   <p> State:  <input type="text" id="userState" class="form-control" placeholder="State"></p>
+					</div>
+				      </div>
+					
+				      
+				      <div class="form-group">
+					<div class="col-md-8">
+					   <p> Country :  <input type="text" id="userCountry" class="form-control" placeholder="Country"></p>
+					</div>
+				      </div>
+				
+				      <div class="form-group">
+					<div class="col-md-8">
+					   <p> Full Name : <input type="text" id="userFullName" name="Name" placeholder="First Name + Last Name" class="form-control"></p>
+					</div>
+				      </div>
+			
+				      <div class="form-group">
+					<div class="col-md-8">
+					   <p> Email Id : <input type="text" id="userEmailId" name="EmailId" placeholder="Email Id" class="form-control"></p>
+					</div>
+				      </div>
+
+				      <div class="form-group">
+					<div class="col-md-8">
+					   <p> Phone Number : <input type="text" id="userPhoneNo" name="PhoneNo" placeholder="Phone Number" class="form-control"></p>
+					</div>
+				      </div>
+
+
+					
+	</body>
+
+</html>
