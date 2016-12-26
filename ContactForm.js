@@ -25,12 +25,13 @@
 
 	function validateForm(){
 		
-		for(var i=3; i<6;i++){
+		for(var i=4; i<=6;i++){
  		boxElement=document.ContactForm.elements[i];
 		if(!boxElement.value){
 			alert('You have not filled the ' +boxElement.name+ '!');
 			boxElement.focus();
-			
+      return false;
+		  	
 		}
 		
 	   }
@@ -40,20 +41,30 @@
 		if(!characterInput.value.match(characterInputFormat)){
 			alert('Please fill characters only');
 			characterInput.focus();
+      return false;
 			
 		}
 
-
-		var emailId= document.getElementById("userEmailId");
-		var atpos = emailId.indexOf("@");
-   		var dotpos = emailId.lastIndexOf(".");
-    		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailId.length) {
+emailId= document.getElementById("userEmailId");
+    var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		
+    		if (!emailId.value.match(emailFormat)) {
         	alert("Not a valid e-mail address");
-        	
+      	  emailId.focus();
+          return false;
+		}
+    
+     phoneNumber= document.getElementById("userPhoneNo");
+    var phoneNumberFormat = /^[0-9]+$/;
+		
+    		if (!phoneNumber.value.match(phoneNumberFormat)) {
+        	alert("Please enter numbers only");
+      	  emailId.focus();
+          return false;
 
 		}
 
 
-	    return true;
+	    return false;
        
 	}
