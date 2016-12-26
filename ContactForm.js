@@ -35,7 +35,7 @@
 		
 	   }
 
-		characterInput=document.ContactForm.name.value;
+		characterInput=document.getElementById("userFullName");
 		var characterInputFormat=/^([a-zA-Z]+\s)*[a-zA-Z]+$/;
 		if(!characterInput.value.match(characterInputFormat)){
 			alert('Please fill characters only');
@@ -44,10 +44,10 @@
 		}
 
 
-		var emailId= document.ContactForm.Email.value;
+		var emailId= document.getElementById("userEmailId");
 		var atpos = emailId.indexOf("@");
    		var dotpos = emailId.lastIndexOf(".");
-    		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+    		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailId.length) {
         	alert("Not a valid e-mail address");
         	
 
