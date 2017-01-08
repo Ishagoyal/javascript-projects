@@ -1,0 +1,47 @@
+footer{
+   padding:40px;
+   background-color:lightgrey;
+}
+  #main_text{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+    font-size:15px !important;
+  font-weight:bold !important;
+  font-family: 'Open Sans', sans-serif !important;
+  }
+
+
+#footer-section{
+  margin-left:2cm;
+  margin-right:2cm;
+}
+
+
+
+.text-line{
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    border-color:transparent;
+    border-bottom: 2px solid grey;
+    width:220px;
+    line-height:25px;
+    
+}
+#btn{
+  background:none;
+  border:2px solid grey;
+  border-radius:15px;
+  color:grey;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size:11px !important;
+  
+}
+
+input[type="text"]{
+  font-family: 'Open Sans', sans-serif !important;
+ 
+}
