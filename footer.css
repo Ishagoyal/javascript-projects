@@ -86,7 +86,9 @@ ul li a i{
 #btn{
   background:none;
   border:1px solid grey;
-  border-radius:15px;
+  border-radius:16px;
+  height:30px;
+  width:70px;
   
   font-family: 'Open Sans', sans-serif !important;
   font-size:12px !important;
@@ -96,4 +98,9 @@ ul li a i{
 input[type="text"]{
   font-family: 'Open Sans', sans-serif !important;
  
+}
+
+#btn:hover{
+  background-color:#3B5998;
+  color:#fff;
 }
