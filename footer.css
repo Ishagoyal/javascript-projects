@@ -9,6 +9,58 @@ footer{
   font-weight:bold !important;
   font-family: 'Open Sans', sans-serif !important;
   }
+ul{
+  overflow:auto;
+}
+
+ul li{
+  list-style-type:none;
+  float:left;
+}
+
+ul li a i{
+  background: lightgrey;
+  color: black;
+  border:1px solid black;
+  width: 25px;
+	height: 25px;
+	border-radius: 50%;
+  font-size:25px;
+  text-align:center;
+  margin-right: 4px;
+  padding-top: 15%;
+  
+}
+
+.fa-facebook:hover {
+	background-color:#3B5998;
+  border:none;
+ }
+ .icoFacebook:hover i{
+  	color:#fff;
+}
+.fa-map-marker:hover {
+  	background-color: #BD3518;
+  border:none;
+}
+.icoLocation:hover i{
+  color:#fff;
+}
+.fa-twitter:hover {
+	background:#00aced;
+    border:none;
+}
+.icoTwitter:hover i{
+  color:#fff;
+}
+
+
+
+#top_text{
+  font-size:16px !important;
+  font-weight:bold !important;
+  font-family: 'Open Sans', sans-serif !important;
+}
 
 
 #footer-section{
@@ -26,18 +78,18 @@ footer{
     border-right: none;
     background: none;
     border-color:transparent;
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid grey;
     width:220px;
     line-height:25px;
     
 }
 #btn{
   background:none;
-  border:2px solid grey;
+  border:1px solid grey;
   border-radius:15px;
-  color:grey;
+  
   font-family: 'Open Sans', sans-serif !important;
-  font-size:11px !important;
+  font-size:12px !important;
   
 }
 
