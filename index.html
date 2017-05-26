@@ -1,0 +1,167 @@
+<Html>
+<Head>
+<Title>My Portfolio</Title>
+<link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+<style type="text/css">
+body{
+	overflow: scroll;
+}
+.navbar-brand{
+		font-family: 'Comfortaa', cursive;
+  		font-size: 25px;
+  		 	
+	}
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 10px;
+		overflow: hidden;
+		background-color: #333;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%; 
+	}
+	li{
+		float: right;
+	}
+	li a{
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration:none;
+	}
+	li a:hover{
+		background-color: lightgrey;
+		text-decoration: none; 
+	}
+	
+	.container {
+  min-width: 100% !important;
+}
+	
+	.bg_home{
+		background-image: url(http://www.ashercharles.com/wp-content/themes/v3/images/banner-main-large4.jpg);
+		background-size: cover;
+		text-align: center;
+		
+	}
+  .headline{
+  font-family: 'Sintony',sans-serif;
+  font-size: 40px;
+  color:#ffffff;
+  Padding-top: 400px;
+}
+.promo-text{
+  font-family: 'Sintony',sans-serif;
+  font-size: 25px;
+  Padding-top: 0px;
+  color:#ffffff;
+}
+.jumbotron{
+	background-color:lightgrey;
+	background-attachment: fixed;
+	min-height: 500px;
+	margin-bottom: 0px;
+}
+  p{;
+  font-size:30px;}
+.jumbotron-content{
+	font-family: 'Sintony',sans-serif;
+	padding-top:5;
+	font-size: 150%;
+	font-weight: 300;
+}
+  #Contact-Section{
+    background-color: #1E3D4C;
+  }
+</style>
+</Head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+	<div class="container">
+	<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapse text-center" data-toggle="collapse" data-target=".collapse-items">
+		<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+	</button>
+	
+	</div>
+	<div class="collapse in">
+	<ul >
+		<li><a href="#Contact">Contact</a></li>
+		<li><a href="#Portfolio">Portfolio</a></li>
+		<li><a href="#About Me">About Me</a></li>
+		<li><a href="#Home">Home</a></li>
+	</ul>
+	</div>
+</nav>
+
+<div class="parallax">
+<div class="bg_home">
+<a name="Home" ></a>
+<div class="headline">Isha Goyal</div>
+<div class="promo-text">Front-End Web Developer</div>
+<div class="promo-text">Fresher</div>
+<br></br>
+<br></br>
+</div>
+
+<div class="jumbotron">
+	<a name="About Me"></a>
+	<div class="row">
+		<div class="col-sm-offset-4 col-sm-4">
+			<a href="https://www.linkedin.com/in/isha-goyal-34b419b7">
+				<img src="http://cliparts.co/cliparts/kcK/nAe/kcKnAejGi.png" alt="My-photo" class="img-responsive img-circle " id="my-photo"/>
+			</a>
+		</div>
+	</div>
+	<div class="row">
+          <div class="col-md-offset-2 col-md-8">
+	  <h2 class="text-center">Click on the image to know me more</h2>
+          <h3 class="text-center jumbotron-content">I would like to give my brief introduction. I am a fresher recently graduated from RTU in the dicipline of computer science. I do know programming languages like C, C++,Java and Android and now i am trying to learn frontend developing languages such as Html,CSS and javascrpit. So this is my first project considering that. Right now i am looking for job opportunities.</h3>
+</div>
+</div>
+</div>
+	<div id="Portfolio-Section">
+	<h2 class="text-center" id="Portfolio">Portfolio</h2><br></br>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12 portfolio-item">
+				<img src="http://media.gettyimages.com/videos/creative-woman-at-work-in-the-office-video-id464108392?s=640x640" alt="Creative" class="img-responsive img-circle" id="creative"/>
+				<h3 class="text-center">Creative</h3>
+				</div>
+
+				<div class="col-sm-4 col-xs-12 portfolio-item">
+				<img src="http://www.psddesigntohtml.com/blog/wp-content/uploads/2014/02/html-css.jpg" alt="html-css" class="img-responsive img-circle" id="html-css"/>
+				<h3 class="text-center">Learning</h3>
+				</div>
+
+				<div class="col-sm-4 col-xs-12 portfolio-item">
+				<img src="https://www.lexisnexis.com/legalnewsroom/resized-image.ashx/__size/550x0/__key/telligent-evolution-components-attachments/13-06-00-00-00-00-16-76/grabbing-hand.jpg" alt="grabbing" class="img-responsive img-circle" id="grabbing"/>
+				<h3 >&nbsp &nbsp &nbsp Can grab quickly</h3>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="Contact-Section">
+	<div class="jumbotron">
+	<a name="Contact"></a>
+	<h2 class="text-center" id="contact">Contact</h2><br></br>
+		<div class="container">
+		<h4> Address</h4><h5>Plot no.15 <br/>Surya Nagar Gyan Marg Colony Near G.P.O. <br/> Tonk Rajasthan 304001<h5>
+		
+		<h4> Contact Number</h4> <h5> 8963042244 </h5>
+		<h4> Email</h4> <h5> iamishagoyal@gmail.com </h5>
+		
+	</div>	
+<p class="LinkToForm text-center"> To get in touch with me <a href="ContactForm.html"> Click Here</a></p>
+</div>
+</div>
+</body>
+</Html>
